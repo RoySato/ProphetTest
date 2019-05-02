@@ -16,8 +16,8 @@ quandl.ApiConfig.api_key="*****"
 
 # TSE refers to Tokyo Stock Exchange, Inc. The number fllowing after / would identify the comapany. Fx.) 2802 refers to Rakuten Inc.
 # TSEで東証。/に続いて証券コードを入れると、その企業の株価推移を見れる。
-quandl_data = quandl.get("TSE/2802")
-quandl_data.to_csv('Rakuten.csv')
+q_data = quandl.get("TSE/2802")
+q_data.to_csv('Rakuten.csv')
 
 
 # Keys: Date,Open,High,Low,Close,Volume
